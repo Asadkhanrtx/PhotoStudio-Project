@@ -72,7 +72,7 @@ metadata:
   name: photostudio-service
   namespace: photostudio-ns
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: photostudio-app
   ports:
