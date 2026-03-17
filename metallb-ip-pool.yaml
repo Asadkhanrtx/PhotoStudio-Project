@@ -1,0 +1,15 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: photostudio-pool
+  namespace: metallb-system
+spec:
+  addresses:
+  - 172.31.15.200-172.31.15.210
+
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: photostudio-l2
+  namespace: metallb-system
