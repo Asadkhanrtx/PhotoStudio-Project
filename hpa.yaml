@@ -5,6 +5,7 @@ metadata:
   namespace: photostudio-ns
 spec:
   scaleTargetRef:
+    apiVersion: apps/v1
     kind: Deployment
     name: photostudio-app
   minReplicas: 2
